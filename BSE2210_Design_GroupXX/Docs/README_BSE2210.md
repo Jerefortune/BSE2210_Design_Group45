@@ -14,9 +14,9 @@
 ## Contributions
 - **Fortune Jere:** Led design principles discussion, created UML diagrams, explained artifacts.  
 - **Richard Phiri:** Prepared business case, outsourcing analysis.  
-- **Joshua mazaz:** Covered cultural intelligence, DevOps/DevSecOps, and AI ethics.  
+- **Joshua mazaza:** Covered cultural intelligence, DevOps/DevSecOps, and AI ethics.  
 
 ## Reflection on AI Usage
 AI tools (such as ChatGPT) were used to help structure the report, provide references, and generate sample diagrams.  
-However, all content was critically rfined by the team.  
-Final arguments, examples, and discussions were hum  
+However, all content was critically refined by the team.  
+Final arguments, examples, and discussions were human based.  
