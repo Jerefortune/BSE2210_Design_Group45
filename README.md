@@ -18,5 +18,5 @@
 
 ## Reflection on AI Usage
 AI tools (such as ChatGPT) were used to help structure the report, provide references, and generate sample diagrams.  
-However, all content was critically rfined by the team.  
-Final arguments, examples, and discussions were hum  
+However, all content was critically refined by the team.  
+Final arguments, examples, and discussions were humun based. 
