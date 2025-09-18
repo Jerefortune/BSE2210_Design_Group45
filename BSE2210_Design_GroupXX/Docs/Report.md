@@ -53,17 +53,16 @@ viability and understandability.
     preventing future teams from repeating mistakes or undermining the
     system\'s foundations.
 
-> **2. Modern Design Trends and Application to USEP**
->
-> The technological landscape is defined by trends that promote
-> scalability, efficiency, and intelligence. Three are particularly
-> pertinent to the USEP project.
->
-> **2.1 Microservices Architecture**
->
-> This architectural style structures an application as a collection of
-> loosely coupled, fine-grained services communicating through
-> lightweight protocols like HTTP/REST or messaging queues.
+2. Modern Design Trends and Application to USEP**
+
+ The technological landscape is defined by trends that promote
+ scalability, efficiency, and intelligence. Three are particularly
+ pertinent to the USEP project.
+
+ **2.1 Microservices Architecture**
+ This architectural style structures an application as a collection of
+ loosely coupled, fine-grained services communicating through
+ lightweight protocols like HTTP/REST or messaging queues.
 
 -   **Application to USEP:** The platform\'s core domains---Academic,
     Support, and Community---are naturally distinct. A microservices
@@ -76,12 +75,11 @@ viability and understandability.
     its long lifespan. It also mitigates risk, as a failure in one
     service (e.g., the forums) does not crash the entire platform.
 
-> **2.2 AI-Augmented Development & Operations (AIDevOps)**
->
-> The integration of Artificial Intelligence into the software
-> development lifecycle (SDLC) and operational processes is now standard
-> practice. This includes AI-powered code completion, automated testing,
-> log analysis, and predictive monitoring.
+2.2 AI-Augmented Development & Operations (AIDevOps)**
+ The integration of Artificial Intelligence into the software
+development lifecycle (SDLC) and operational processes is now standard
+ practice. This includes AI-powered code completion, automated testing,
+ log analysis, and predictive monitoring.
 
 -   **Application to USEP:** This trend is a key tool for addressing the
     project\'s **limited budget**. AI-assisted coding tools (e.g.,
@@ -92,13 +90,13 @@ viability and understandability.
     enhancing reliability and reducing downtime. This contributes to a
     sustainable operational model.
 
-> **2.3 Serverless Computing (Function-as-a-Service - FaaS)**
->
-> Serverless computing allows developers to build and run applications
-> without managing server infrastructure. The cloud provider dynamically
-> manages the allocation of machine resources.
+2.3 Serverless Computing (Function-as-a-Service - FaaS)**
 
--   **Application to USEP:** This model is ideal for specific,
+ Serverless computing allows developers to build and run applications
+ without managing server infrastructure. The cloud provider dynamically
+ manages the allocation of machine resources.
+
+   **Application to USEP:** This model is ideal for specific,
     event-driven functions within the platform. For example, the \"Loan
     Repayment Alert\" function or the \"Event Registration
     Confirmation\" email service may only need to run intermittently. A
@@ -108,9 +106,8 @@ viability and understandability.
     overhead, allowing the team to focus on core application logic
     rather than infrastructure management.
 
-> **3. Business Case: Justifying the USEP Investment**
-
--   **Problem Statement:** The current student experience is fragmented
+3. Business Case: Justifying the USEP Investment**
+Problem Statement:** The current student experience is fragmented
     across a myriad of disconnected systems: a separate Learning
     Management System (LMS), a financial aid portal, a static timetable
     website, and various club and society pages. This fragmentation
@@ -145,16 +142,16 @@ viability and understandability.
         informed strategic decisions about resource allocation, program
         offerings, and student support services.
 
-> **4. Outsourcing Analysis and Recommendation**
->
-> To augment the internal team and address budget constraints,
-> outsourcing is a viable strategy. The three primary models are:
+4. Outsourcing Analysis and Recommendation**
 
--   **Onshore:** Contracting with a provider within the same country.
+ To augment the internal team and address budget constraints, 
+ outsourcing is a viable strategy. The three primary models are:
+
+Onshore:** Contracting with a provider within the same country.
     This offers the easiest communication, cultural alignment, and legal
-    compliance but at the highest cost.
+ compliance but at the highest cost.
 
--   **Offshore:** Contracting with a provider in a geographically
+  **Offshore:** Contracting with a provider in a geographically
     distant, low-cost country. This offers the lowest cost but
     introduces significant challenges in communication, time zone
     differences, and cultural misalignment, which can lead to project
@@ -164,29 +161,29 @@ viability and understandability.
     overlapping time zones and cultural similarities. This offers a
     balance of cost savings and manageable collaboration.
 
-> **Recommendation for USEP:**\
-> We recommend a **Hybrid Sourcing Model with a Nearshore Bias**. Given
-> the strategic importance, complex integrations, and need for close
-> collaboration on core architecture and security, the **core design and
-> architecture work should be kept onshore or nearshore**. This ensures
-> clear communication of the vision and tight alignment with university
-> values (e.g., ethics, inclusivity).
->
-> However, **specific, well-defined development tasks** (e.g.,
-> implementing UI components, writing unit tests for isolated services)
-> could be assigned to an offshore partner to capitalize on cost
-> savings, provided they operate under strict guidelines and a robust
-> integration process managed by the onshore team.
->
-> This balanced approach mitigates the risks of pure offshoring while
-> still achieving significant cost optimization, making it the most
-> prudent choice for the USEP project.
->
-> **5. Cultural Intelligence in Design**
->
-> A platform for a diverse, international student body must be built on
-> a foundation of inclusivity. This requires concrete, implementable
-> requirements.
+recommendation for USEP:**\
+ We recommend a **Hybrid Sourcing Model with a Nearshore Bias**. Given
+ the strategic importance, complex integrations, and need for close
+ collaboration on core architecture and security, the **core design and
+ architecture work should be kept onshore or nearshore**. This ensures
+ clear communication of the vision and tight alignment with university
+ values (e.g., ethics, inclusivity).
+
+ However, **specific, well-defined development tasks** (e.g.,
+ implementing UI components, writing unit tests for isolated services)
+ could be assigned to an offshore partner to capitalize on cost
+ savings, provided they operate under strict guidelines and a robust
+ integration process managed by the onshore team.
+
+ This balanced approach mitigates the risks of pure offshoring while
+  still achieving significant cost optimization, making it the most
+ prudent choice for the USEP project.
+
+ **5. Cultural Intelligence in Design**
+
+ A platform for a diverse, international student body must be built on
+ a foundation of inclusivity. This requires concrete, implementable
+ requirements.
 
 1.  **Comprehensive Accessibility Compliance (WCAG 2.1
     AA):** Accessibility must be a core design principle, not a feature.
@@ -228,7 +225,8 @@ viability and understandability.
 
 6.  Diagram
 
-> ![](media/image1.png){width="6.833333333333333in" height="1.725in"}
+<img width="975" height="246" alt="image" src="https://github.com/user-attachments/assets/bc0f136a-bf4d-4d42-a817-2ccb8d7a4763" />
+
 
 7.  **How the Pipeline Ensures Sustainability:**\
     This automated workflow embodies the DevSecOps principle of
@@ -241,7 +239,7 @@ viability and understandability.
     ensuring that USEP remains scalable and sustainable for years beyond
     its initial launch.
 
-> **7. AI Awareness: Opportunity and Ethical Concern**
+**7. AI Awareness: Opportunity and Ethical Concern**
 
 -   **AI Opportunity: Predictive Academic Support System**\
     Beyond a simple chatbot, a more powerful opportunity lies in a
@@ -263,9 +261,9 @@ viability and understandability.
     \"at-risk\" or, conversely, fails to recognize at-risk students in
     others. This would exacerbate inequality rather than alleviate it.
 
-> **Mitigation Strategy:** This risk must be mitigated through rigorous
-> and ongoing processes: auditing training data for representativeness,
-> using fairness-aware machine learning algorithms, implementing model
-> explainability (XAI) techniques to understand why a prediction was
-> made, and establishing a human-in-the-loop review process for
-> significant AI-driven recommendations.
+ **Mitigation Strategy:** This risk must be mitigated through rigorous
+ and ongoing processes: auditing training data for representativeness,
+ using fairness-aware machine learning algorithms, implementing model
+ explainability (XAI) techniques to understand why a prediction was
+ made, and establishing a human-in-the-loop review process for
+ significant AI-driven recommendations.
