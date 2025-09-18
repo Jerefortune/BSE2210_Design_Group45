@@ -1,109 +1,271 @@
-# BSE 2210 — Software Design
-## Assignment 1: Foundations of Modern Software Design
-### Unified Student Experience Platform (USEP) — Documented Artifacts
+**Research Dossier - Part A**
 
-**Team:** BSE2210_Design_GroupXX  
-**Date:** September 18, 2025  
+**Course:** BSE 2210 -- Software Design\
+**Assignment:** 1 - Foundations of Modern Software Design\
+**Date:** September 16, 2025\
+**Team:** Group XX
 
----
+**1. Software Design in 2025: Process and Artifact**
 
-## 1. Software Design in 2025 — Process and Artifact  
+**1.1 Design as a Process**
 
-### Design as a Process  
-In 2025, software design is iterative and adaptive. It balances user needs, business goals, and sustainability.  
-The process includes discovery, modeling, decision-making, validation, and continuous evolution.  
+In the contemporary software landscape of 2025, design is understood not
+as a preliminary phase but as a **continuous, iterative, and holistic
+process** integrated throughout the entire product lifecycle. This
+process is inherently collaborative, involving constant dialogue between
+designers, developers, operations teams (DevOps), business stakeholders,
+and end-users. It is a decision-making framework that balances
+functional requirements with non-functional constraints like
+scalability, security, and ethics.
 
-### Design as an Artifact  
-Artifacts are tangible outputs such as UML diagrams, ADRs, and CI/CD pipeline diagrams.  
-They ensure communication, traceability, and maintainability.  
+For the Unified Student Experience Platform (USEP), this means the
+design process will be Agile and user-centric. It will begin with
+high-level architectural decisions and evolve through successive
+sprints, incorporating feedback from pilot groups of international
+students and university administration. This approach ensures the final
+product is not only technically sound but also genuinely meets the
+diverse needs of its users, fulfilling the mandate for a sustainable and
+lasting design.
 
----
+**1.2 Design as an Artifact**
 
-## 2. Modern Design Trends  
+The tangible outputs of the design process are the **artifacts**. These
+documents and models serve as the critical blueprint for development,
+the single source of truth for architecture, and the foundational
+knowledge base for all future maintenance and scaling efforts. For a
+strategic university-wide platform like USEP, which must \"last beyond
+2025,\" these artifacts are indispensable for ensuring long-term
+viability and understandability.
 
-- **Microservices & API-First:** Services for Academic, Support, Community modules allow independent scaling.  
-- **Serverless:** Used for notifications (exam alerts, reminders) to reduce cost.  
-- **AI Integration & MLOps:** Advising chatbot with fairness checks and CI/CD-like pipelines.  
-- **Sustainable Architecture:** Cloud with renewable energy, caching, and optimized workloads.  
+**Relevant Artifacts for USEP:**
 
----
+1.  **System Context Diagram:** This high-level artifact is essential
+    for defining the system\'s boundaries and identifying all external
+    entities and systems USEP must interact with. It is the first step
+    in managing the complexity of integration with existing LMS and HR
+    systems, a core project goal.
 
-## 3. Business Case  
+2.  **Architecture Decision Records (ADRs):** These documents capture
+    the context, rationale, and consequences of key architectural
+    decisions. For USEP, which will evolve over many years, ADRs provide
+    crucial institutional memory, explaining *why* certain choices
+    (e.g., technology selection, architectural patterns) were made,
+    preventing future teams from repeating mistakes or undermining the
+    system\'s foundations.
 
-**Problem:** Student services are fragmented, inefficient, and frustrating.  
-**Solution:** Unified Student Experience Platform (USEP) integrating LMS, HR, and financial systems.  
-**Value:** Improves retention, reduces costs, enhances scalability.  
+> **2. Modern Design Trends and Application to USEP**
+>
+> The technological landscape is defined by trends that promote
+> scalability, efficiency, and intelligence. Three are particularly
+> pertinent to the USEP project.
+>
+> **2.1 Microservices Architecture**
+>
+> This architectural style structures an application as a collection of
+> loosely coupled, fine-grained services communicating through
+> lightweight protocols like HTTP/REST or messaging queues.
 
-**KPIs:**  
-- +15% student satisfaction  
-- –30% ticket resolution time  
-- 3+ legacy systems integrated in 18 months  
+-   **Application to USEP:** The platform\'s core domains---Academic,
+    Support, and Community---are naturally distinct. A microservices
+    architecture allows us to develop and deploy these domains
+    independently. For instance, the \"AI Advising Service\" can be
+    built and scaled by a specialized team using Python, while the
+    \"Course Registration Service\" is developed in Java by another
+    team. This directly supports the university\'s requirement for
+    a **scalable** and adaptable system that can grow and evolve over
+    its long lifespan. It also mitigates risk, as a failure in one
+    service (e.g., the forums) does not crash the entire platform.
 
----
+> **2.2 AI-Augmented Development & Operations (AIDevOps)**
+>
+> The integration of Artificial Intelligence into the software
+> development lifecycle (SDLC) and operational processes is now standard
+> practice. This includes AI-powered code completion, automated testing,
+> log analysis, and predictive monitoring.
 
-## 4. Outsourcing Options  
+-   **Application to USEP:** This trend is a key tool for addressing the
+    project\'s **limited budget**. AI-assisted coding tools (e.g.,
+    GitHub Copilot) can significantly boost developer productivity,
+    allowing a smaller in-house team to manage a larger codebase.
+    Furthermore, AI-driven operational monitoring can predict system
+    failures or performance degradation before they impact students,
+    enhancing reliability and reducing downtime. This contributes to a
+    sustainable operational model.
 
-- **Onshore:** Same country, high cost, best compliance.  
-- **Nearshore:** Neighboring regions, balanced cost and collaboration.  
-- **Offshore:** Lowest cost, time-zone/cultural challenges.  
+> **2.3 Serverless Computing (Function-as-a-Service - FaaS)**
+>
+> Serverless computing allows developers to build and run applications
+> without managing server infrastructure. The cloud provider dynamically
+> manages the allocation of machine resources.
 
-**Recommendation:** Nearshore for most tasks, onshore for sensitive data, selective offshore for UI/testing.  
+-   **Application to USEP:** This model is ideal for specific,
+    event-driven functions within the platform. For example, the \"Loan
+    Repayment Alert\" function or the \"Event Registration
+    Confirmation\" email service may only need to run intermittently. A
+    serverless approach for these components **optimizes cost**---we
+    only pay for the milliseconds of compute time used---directly
+    addressing the budget constraint. It also reduces operational
+    overhead, allowing the team to focus on core application logic
+    rather than infrastructure management.
 
----
+> **3. Business Case: Justifying the USEP Investment**
 
-## 5. Cultural Intelligence  
+-   **Problem Statement:** The current student experience is fragmented
+    across a myriad of disconnected systems: a separate Learning
+    Management System (LMS), a financial aid portal, a static timetable
+    website, and various club and society pages. This fragmentation
+    leads to significant student frustration, difficulty in navigating
+    university life, administrative inefficiency due to data silos, and
+    an inability to form a holistic view of student engagement and
+    well-being.
 
-**Inclusivity requirements:**  
-1. Multilingual interface with RTL support.  
-2. Accessibility (WCAG 2.2 AA).  
-3. Time-zone awareness in calendars.  
-4. Privacy and consent transparency.  
+-   **Proposed Solution:** The Unified Student Experience Platform
+    (USEP) will serve as a single, integrated, and personalized digital
+    portal. It will seamlessly combine academic, administrative,
+    support, and community functionalities into a cohesive and intuitive
+    user experience.
 
----
+-   **Expected Value and Return on Investment:**
 
-## 6. DevOps & DevSecOps  
+    -   **Improved Student Retention and Success:** A streamlined and
+        supportive digital experience reduces administrative burden and
+        stress on students, allowing them to focus on their studies.
+        Early intervention tools powered by unified data can help
+        identify and support at-risk students.
 
-**Pipeline includes:**  
-Code commit → Build & Unit Tests → Security Scans → Registry → Integration Tests →  
-Staging Deploy → AI Model Validation → End-to-End Tests → Production → Monitoring.  
+    -   **Enhanced Operational Efficiency:** USEP will automate manual
+        processes and break down data silos between departments
+        (Registrar, Finance, Student Affairs). This reduces redundant
+        work, improves data accuracy, and frees up staff time for
+        higher-value, student-facing activities.
 
-**Principles:**  
-- Shift-left security  
-- Infrastructure as Code  
-- Observability  
+    -   **Data-Driven Decision Making:** A centralized platform provides
+        a comprehensive dataset on student behavior and engagement. This
+        analytics capability enables university leadership to make
+        informed strategic decisions about resource allocation, program
+        offerings, and student support services.
 
-```mermaid
-flowchart TD
-  A[Code Commit] --> B[Build & Unit Tests]
-  B --> C[Static Security Scan]
-  C --> D[Container Registry]
-  D --> E[Integration Tests]
-  E --> F[Staging Deploy]
-  F --> G[Model Validation (AI Services)]
-  G --> H[End-to-End Tests]
-  H --> I[Production Deployment]
-  I --> J[Monitoring & Alerts]
-```
+> **4. Outsourcing Analysis and Recommendation**
+>
+> To augment the internal team and address budget constraints,
+> outsourcing is a viable strategy. The three primary models are:
 
----
+-   **Onshore:** Contracting with a provider within the same country.
+    This offers the easiest communication, cultural alignment, and legal
+    compliance but at the highest cost.
 
-## 7. AI Opportunities & Ethics  
+-   **Offshore:** Contracting with a provider in a geographically
+    distant, low-cost country. This offers the lowest cost but
+    introduces significant challenges in communication, time zone
+    differences, and cultural misalignment, which can lead to project
+    risk.
 
-**Opportunity:** AI advising assistant for courses and deadlines.  
-**Concern:** Bias in recommendations. Mitigation includes fairness audits, transparency, and human oversight.  
+-   **Nearshore:** Contracting with a provider in a nearby country with
+    overlapping time zones and cultural similarities. This offers a
+    balance of cost savings and manageable collaboration.
 
----
+> **Recommendation for USEP:**\
+> We recommend a **Hybrid Sourcing Model with a Nearshore Bias**. Given
+> the strategic importance, complex integrations, and need for close
+> collaboration on core architecture and security, the **core design and
+> architecture work should be kept onshore or nearshore**. This ensures
+> clear communication of the vision and tight alignment with university
+> values (e.g., ethics, inclusivity).
+>
+> However, **specific, well-defined development tasks** (e.g.,
+> implementing UI components, writing unit tests for isolated services)
+> could be assigned to an offshore partner to capitalize on cost
+> savings, provided they operate under strict guidelines and a robust
+> integration process managed by the onshore team.
+>
+> This balanced approach mitigates the risks of pure offshoring while
+> still achieving significant cost optimization, making it the most
+> prudent choice for the USEP project.
+>
+> **5. Cultural Intelligence in Design**
+>
+> A platform for a diverse, international student body must be built on
+> a foundation of inclusivity. This requires concrete, implementable
+> requirements.
 
-## 8. Sample ADR  
+1.  **Comprehensive Accessibility Compliance (WCAG 2.1
+    AA):** Accessibility must be a core design principle, not a feature.
+    This includes:
 
-**ADR 001 — Adopt Microservices Architecture**  
-- **Context:** Need modular integration.  
-- **Decision:** Microservices with API Gateway.  
-- **Consequences:** Scalability gains but requires advanced DevOps.  
+    -   **Full screen reader support** for visually impaired students.
 
----
+    -   **Keyboard navigation** for all functionalities, supporting
+        those with motor disabilities.
 
-## 9. Conclusion  
+    -   **High-contrast mode** and resizable text options.
 
-USEP reflects modern practices in 2025: modular microservices, AI integration, sustainability, inclusivity,  
-and DevSecOps. Balanced outsourcing and cultural intelligence will ensure longevity and effectiveness.  
+    -   **Captions and transcripts** for all audio and video content.
+
+    -   **Use of ARIA landmarks** and semantic HTML to ensure a
+        meaningful experience for assistive technologies.
+
+2.  **Multilingual and Localized User Experience:** The UI must extend
+    beyond simple text translation.
+
+    -   **Support for Right-to-Left (RTL) Languages:** Full layout
+        mirroring for languages like Arabic and Hebrew.
+
+    -   **Cultural Localization:** Date, time, number, and address
+        formats must adapt to the user\'s locale. Imagery and icons must
+        be culturally appropriate and neutral.
+
+    -   **Dynamic Language Selection:** The user should be able to set
+        their language preference easily, which is then remembered
+        across all services and devices.
+
+3.  **6. DevOps and DevSecOps Integration**
+
+4.  A modern CI/CD (Continuous Integration and Continuous Deployment)
+    pipeline is the engine that enables the \"design that lasts\" by
+    ensuring quality, security, and rapid, reliable evolution.
+
+5.  **USEP CI/CD Pipeline Overview:**
+
+6.  Diagram
+
+> ![](media/image1.png){width="6.833333333333333in" height="1.725in"}
+
+7.  **How the Pipeline Ensures Sustainability:**\
+    This automated workflow embodies the DevSecOps principle of
+    \"shifting left\" on security and quality. Every code change is
+    automatically tested and scanned for vulnerabilities *before* it
+    reaches production. This catches bugs and security flaws early when
+    they are cheapest to fix. The result is a more stable, secure, and
+    maintainable codebase. This rigorous, automated process reduces the
+    \"technical debt\" that often cripples long-lived projects, directly
+    ensuring that USEP remains scalable and sustainable for years beyond
+    its initial launch.
+
+> **7. AI Awareness: Opportunity and Ethical Concern**
+
+-   **AI Opportunity: Predictive Academic Support System**\
+    Beyond a simple chatbot, a more powerful opportunity lies in a
+    predictive system that analyzes unified student data (grades,
+    attendance, engagement with support services, forum activity) to
+    identify students who may be at risk of failing or dropping out. The
+    system could then automatically trigger targeted interventions, such
+    as prompting an advisor to reach out or suggesting specific academic
+    resources to the student. This proactive support directly enhances
+    student retention and success.
+
+-   **Ethical Concern: Algorithmic Bias and Fairness**\
+    The primary ethical concern with such an AI system is **bias**. If
+    the historical data used to train the predictive models reflects
+    existing societal or institutional biases (e.g., against certain
+    nationalities, socioeconomic backgrounds, or genders), the AI will
+    learn and perpetuate these biases. This could lead to a scenario
+    where the system unfairly flags students from certain groups as
+    \"at-risk\" or, conversely, fails to recognize at-risk students in
+    others. This would exacerbate inequality rather than alleviate it.
+
+> **Mitigation Strategy:** This risk must be mitigated through rigorous
+> and ongoing processes: auditing training data for representativeness,
+> using fairness-aware machine learning algorithms, implementing model
+> explainability (XAI) techniques to understand why a prediction was
+> made, and establishing a human-in-the-loop review process for
+> significant AI-driven recommendations.
