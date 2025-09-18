@@ -1,0 +1,88 @@
+# USEP Project: Introductory Design Vision
+## Research Dossier - Part A
+
+**Course:** BSE 2210 – Software Design  
+**Assignment:** 1 - Foundations of Modern Software Design  
+**Date:** September 16, 2025  
+**Team:** Group XX  
+**Authors:** [Member A Name], [Member B Name], [Member C Name]
+
+---
+
+### 1. Software Design in 2025: Process and Artifact
+
+#### 1.1 Design as a Process
+In 2025, software design is a **continuous, iterative, and collaborative process** deeply integrated with Agile and DevOps methodologies. It involves constant feedback loops among stakeholders, designers, developers, and end-users, focusing on balancing functional requirements with non-functional constraints like scalability, security, and ethics.
+
+For USEP, this means adopting a **user-centric Agile approach**. The process will start with high-level architectural decisions and evolve through sprints, incorporating feedback from international student pilot groups and university administrators. This ensures the platform is technically robust and meets diverse user needs, aligning with the goal of a sustainable, long-lasting design.
+
+#### 1.2 Design as an Artifact
+Design artifacts are **tangible outputs** that serve as blueprints for development, communication tools, and documentation for future maintenance. For USEP, these artifacts are critical for ensuring long-term viability and understandability.
+
+**Relevant Artifacts for USEP:**
+1.  **System Context Diagram:** Defines system boundaries and interactions with external entities (e.g., LMS, HR systems). Essential for managing integration complexity.
+2.  **Architecture Decision Records (ADRs):** Documents key architectural decisions, providing historical context and rationale. Supports maintainability and prevents future mistakes.
+
+---
+
+### 2. Modern Design Trends and Application to USEP
+
+#### 2.1 Microservices Architecture
+Structures an application as loosely coupled, independently deployable services.
+
+*   **Application to USEP:** Ideal for modular domains (Academic, Support, Community). Allows independent development and scaling of services like "AI Advising" and "Course Registration." Enhances scalability and fault isolation.
+
+#### 2.2 AI-Augmented Development (AIDevOps)
+Integrates AI into the SDLC for tasks like code completion, testing, and monitoring.
+
+*   **Application to USEP:** Boosts productivity with tools like GitHub Copilot, addressing budget constraints. AI-driven monitoring predicts failures, improving reliability and sustainability.
+
+#### 2.3 Serverless Computing (FaaS)
+Allows building applications without managing server infrastructure.
+
+*   **Application to USEP:** Cost-effective for event-driven functions (e.g., "Loan Repayment Alerts"). Reduces operational overhead and optimizes costs.
+
+---
+
+### 3. Business Case: Justifying the USEP Investment
+
+*   **Problem:** Fragmented systems (LMS, finance portals) lead to poor user experience, administrative inefficiency, and data silos.
+*   **Solution:** USEP integrates all services into a single, personalized portal.
+*   **Expected Value:**
+    *   **Improved Student Retention:** Streamlined experience reduces stress and supports success.
+    *   **Operational Efficiency:** Automates processes and breaks down data silos.
+    *   **Data-Driven Insights:** Enables informed decisions on resource allocation and support services.
+
+---
+
+### 4. Outsourcing Analysis and Recommendation
+
+*   **Onshore:** High cost, easy communication.
+*   **Offshore:** Low cost, significant communication challenges.
+*   **Nearshore:** Moderate cost, good balance of cost savings and collaboration.
+
+**Recommendation:** **Hybrid model with nearshore bias.** Keep core design/architecture onshore/nearshore for alignment with values. Offshore well-defined tasks (e.g., UI implementation) under strict guidelines for cost savings.
+
+---
+
+### 5. Cultural Intelligence in Design
+
+1.  **Accessibility Compliance (WCAG 2.1 AA):**
+    *   Screen reader support, keyboard navigation, high-contrast mode, captions for multimedia.
+2.  **Multilingual & Localized UI:**
+    *   Support for RTL languages, dynamic language selection, and culturally appropriate content.
+
+---
+
+### 6. DevOps and DevSecOps Integration
+
+A CI/CD pipeline ensures quality, security, and sustainability:
+
+```mermaid
+graph LR
+A[Developer Commits Code] --> B[Version Control<br>[GitHub]]
+B --> C[CI Pipeline: Build & Test]
+C --> D[Security Scan<br>[SAST/DAST]]
+D --> E[Deploy to Staging]
+E --> F[Manual Approval]
+F --> G[Deploy to Production]
