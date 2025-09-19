@@ -9,12 +9,12 @@
 |-----------|------------|--------------------------|
 | FORTUNE JERE  | 2410050     | Design & Principles Lead |
 | RICHARD PHIRI | 2410401      | Business Analyst         |
-| JOSHUA MAZAZA  | Absent     | Culture & Ops Lead       |
+| ALINTULA  | Absent     | Culture & Ops Lead       |
 
 ## Contributions
 - **Fortune Jere:** Led design principles discussion, created UML diagrams, explained artifacts.  
 - **Richard Phiri:** Prepared business case, outsourcing analysis.  
-- **Joshua mazaza:** Covered cultural intelligence, DevOps/DevSecOps, and AI ethics.  
+- **Alintula** Covered cultural intelligence, DevOps/DevSecOps, and AI ethics.  
 
 ## Reflection on AI Usage
 AI tools (such as ChatGPT) were used to help structure the report, provide references, and generate sample diagrams.  
