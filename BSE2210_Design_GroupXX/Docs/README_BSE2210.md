@@ -8,13 +8,11 @@
 | Name      | Student ID | Role                     |
 |-----------|------------|--------------------------|
 | FORTUNE JERE  | 2410050     | Design & Principles Lead |
-| RICHARD PHIRI | 2410401      | Business Analyst         |
-| ALINTULA  | Absent     | Culture & Ops Lead       |
+| RICHARD PHIRI | 2410401      | Business Analyst/Culture & Ops Lead|
 
 ## Contributions
 - **Fortune Jere:** Led design principles discussion, created UML diagrams, explained artifacts.  
-- **Richard Phiri:** Prepared business case, outsourcing analysis.  
-- **Alintula** Covered cultural intelligence, DevOps/DevSecOps, and AI ethics.  
+- **Richard Phiri:** Prepared business case, outsourcing analysis/Covered cultural intelligence, DevOps/DevSecOps, and AI ethics.  
 
 ## Reflection on AI Usage
 AI tools (such as ChatGPT) were used to help structure the report, provide references, and generate sample diagrams.  
